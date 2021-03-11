@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- css style sheet -->
+    <link rel="stylesheet" href="ashwini1.css">
+    <!-- <link rel="stylesheet" href="style1.css"> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+    <title>SpaceX Launcher</title>
+</head>
+<body> 
+<div > 
+<h1 class="mt-3 ml-4">SpaceX Launch Programs</h1>
+</div>
+ <div class="left-container">
+
+    <div class="row ml-2">
+    <div class="col-lg-2 ">
+        
+        <h5>Filters</h5>
+        <h6>Launch Year</h6>
+        <hr>
+        <div class="row " >
+
+            <div class="col-sm-1 col-lg-6">
+                <button type="button" class="btn btn-success btn-sm ml-2 mb-2">  2008  </button>
+                <button type="button" class="btn btn-success btn-sm ml-2 mb-2">2010</button>
+            </div>   
+            <div class="col-sm-1 col-lg-6">
+                <button type="button" class="btn btn-success btn-sm ml-2 mb-2">2009</button>
+            <button type="button" class="btn btn-success btn-sm ml-2 mb-2">2011</button>
+            </div>
+            <div class="col-sm-1 col-lg-6">
+                <button type="button" class="btn btn-success btn-sm ml-2 mb-2">2012</button>
+            <button type="button" class="btn btn-success btn-sm ml-2 mb-2">2014</button>
+            </div> 
+            <div class="col-sm-1 col-lg-6">
+                <button type="button" class="btn btn-success btn-sm ml-2 mb-2">2013</button>
+            <button type="button" class="btn btn-success btn-sm ml-2 mb-2">2015</button>
+            </div>
+            <div class="col-sm-1 col-lg-6">
+              <button type="button" class="btn btn-success btn-sm ml-2 mb-2">2016</button>
+          <button type="button" class="btn btn-success btn-sm ml-2 mb-2">2018</button>
+          </div>
+          <div class="col-sm-1 col-lg-6">
+            <button type="button" class="btn btn-success btn-sm ml-2 mb-2">2017</button>
+        <button type="button" class="btn btn-success btn-sm ml-2 mb-2">2019</button>
+        </div>
+      
+      </div>
+        <div>
+            <h6>Successful Launch</h6><hr>
+            <div>
+               <button type="button" class="btn btn-success btn-sm ml-2 mb-2">Ture</button>
+                  <button type="button" class="btn btn-success btn-sm ml-2 mb-2">False</button>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h6>Successful Landing</h6>
+                <hr>
+                <div>
+                  <button type="button" class="btn btn-success btn-sm ml-2 mb-2">Ture</button>
+                  <button type="button" class="btn btn-success btn-sm ml-2 mb-2">False</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<div>
+    <h3 >SpaceX-launcher</h3>
+ <div class="container left-container">
+    <div class="col-lg-12">
+        <div class="row" >
+            
+        <div class="card-deck">
+            <div class="card">
+              <img src="https://lh3.googleusercontent.com/proxy/CpSd05GiBi6pdtAebYKnOHzvyTk7UgOV44bGQVUMZPlCBkM5bu_4eCKdxWss3ShradRNxXDIQX_Q3ZdnIpa6n7qMepiX6400YBfoS0G3qidx3jcACw" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title card-title1">FalconSat #1</h5>
+                <p class="card-text"><b>Mission ids:</b> {list mission}.<br><p><b>Launch year :</b>2006</p>
+              <p><b>Successful Launch:</b>False</p>
+            <p><b>Successful Landing:</b>False</p></p>
+                
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://lh3.googleusercontent.com/proxy/CpSd05GiBi6pdtAebYKnOHzvyTk7UgOV44bGQVUMZPlCBkM5bu_4eCKdxWss3ShradRNxXDIQX_Q3ZdnIpa6n7qMepiX6400YBfoS0G3qidx3jcACw" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title card-title1">DemoSat #2</h5>
+                <p class="card-text"><b>Mission ids:</b> {list mission}.<br><p><b>Launch year :</b>{Launch_year}</p>
+              <p><b>Successful Launch:</b>{launch_success}</p>
+            <p><b>Successful Landing:</b>{Launch_landing}</p></p>
+                
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://lh3.googleusercontent.com/proxy/CpSd05GiBi6pdtAebYKnOHzvyTk7UgOV44bGQVUMZPlCBkM5bu_4eCKdxWss3ShradRNxXDIQX_Q3ZdnIpa6n7qMepiX6400YBfoS0G3qidx3jcACw" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title card-title1">Trailblazzr #3</h5>
+                <p class="card-text"><b>Mission ids:</b> {list mission}.<br><p><b>Launch year :</b>{Launch_year}</p>
+              <p><b>Successful <br>Launch:</b>{launch_success}</p>
+            <p><b>Successful<br> Landing:</b>{Launch_landing}</p></p>
+                
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://lh3.googleusercontent.com/proxy/aS-qKzQ0Mhb0-dqkFO9IMh9l1i19jUPkKQcsysrZan1N3VtLVBgFj1zkWbjS5JH_N4s82wPEiqPSHIt6vCNUWlvwrm1tZMgZf1vbcX7zvZ7UZrE" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title card-title1">RatSat #4</h5>
+                <p class="card-text"><b>Mission ids:</b> {list mission}.<br><p><b>Launch year :</b>{Launch_year}</p>
+              <p><b>Successful<br> Launch:</b>{launch_success}</p>
+            <p><b>Successful <br> Landing:</b>{Launch_landing}</p></p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+         
+        <div class="row" >
+              <br>
+              <div class="card-deck">
+                <div class="card">
+                  <img src="https://lh3.googleusercontent.com/proxy/CpSd05GiBi6pdtAebYKnOHzvyTk7UgOV44bGQVUMZPlCBkM5bu_4eCKdxWss3ShradRNxXDIQX_Q3ZdnIpa6n7qMepiX6400YBfoS0G3qidx3jcACw" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title card-title1">{mission_name} #{flight_number}</h5>
+                    <p class="card-text"><b>Mission ids:</b> {list_mission}.<br><p><b>Launch year :</b>{Launch_year}</p>
+                  <p><b>Successful <br> Launch:</b>{launch_success}</p>
+                <p><b>Successful <br> Landing:</b>{Launch_landing}</p></p>
+                    
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="https://lh3.googleusercontent.com/proxy/CpSd05GiBi6pdtAebYKnOHzvyTk7UgOV44bGQVUMZPlCBkM5bu_4eCKdxWss3ShradRNxXDIQX_Q3ZdnIpa6n7qMepiX6400YBfoS0G3qidx3jcACw" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title card-title1">{mission_name} #{flight_number}</h5>
+                    <p class="card-text"><b>Mission ids:</b> {list_mission}.<br><p><b>Launch year :</b>{Launch_year}</p>
+                  <p><b>Successful <br> Launch:</b>{launch_success}</p>
+                <p><b>Successful <br> Landing:</b>{Launch_landing}</p></p>
+                    
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="https://lh3.googleusercontent.com/proxy/CpSd05GiBi6pdtAebYKnOHzvyTk7UgOV44bGQVUMZPlCBkM5bu_4eCKdxWss3ShradRNxXDIQX_Q3ZdnIpa6n7qMepiX6400YBfoS0G3qidx3jcACw" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title card-title1">{mission_name} #{flight_number}</h5>
+                    <p class="card-text"><b>Mission ids:</b> {list_mission}.<br><p><b>Launch year :</b>{Launch_year}</p>
+                  <p><b>Successful <br> Launch:</b>{launch_success}</p>
+                <p><b>Successful <br> Landing:</b>{Launch_landing}</p></p>
+                    
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="https://lh3.googleusercontent.com/proxy/CpSd05GiBi6pdtAebYKnOHzvyTk7UgOV44bGQVUMZPlCBkM5bu_4eCKdxWss3ShradRNxXDIQX_Q3ZdnIpa6n7qMepiX6400YBfoS0G3qidx3jcACw" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title card-title1">{mission_name} #{flight_number}</h5>
+                    <p class="card-text"><b>Mission ids:</b> {list_mission}.<br><p><b>Launch year :</b>{Launch_year}</p>
+                  <p><b>Successful <br> Launch:</b>{launch_success}</p>
+                <p><b>Successful <br> Landing:</b>{Launch_landing}</p></p>
+                    
+                  </div>
+                </div>
+                </div>
+              </div>
+        </div></div>
+    </div>  
+    </div>
+</div> 
+<br><br>
+<div class="footer">
+  <p><b>Developed by:</b>Ashwini Bambale</p>
+</div> 
+</body>
+</html>

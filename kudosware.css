@@ -1,0 +1,21 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(255, 250, 250);
+}
+/* .left-container{
+    background-color: white;
+    border: 1px solid gray;
+} */
+h6{
+    text-align: center;
+}
+.card-title1{
+    color: blue;
+}
+.footer{
+    text-align: center;
+}
